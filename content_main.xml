@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0f4c05"
+    android:weightSum="1">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="wsu.csc5991.wsusafetyapp.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:id="@+id/FirstLayout"
+        android:weightSum="1"
+        android:layout_weight="0.64">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/SOSLayout"
+            android:layout_weight="1.22">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="SOS"
+                android:id="@+id/SOSbutton"
+                android:background="@drawable/roundbutton"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ReportIncidentLayout">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="Report An Incidents"
+                android:id="@+id/ReportIncidentbutton"
+                android:background="@drawable/roundbutton"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/SecondLayout"
+        android:weightSum="1"
+        android:layout_weight="0.32">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/YourReportsLayout"
+            android:layout_weight="1.13">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="Your Reports"
+                android:id="@+id/YourReportsbutton"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:background="@drawable/roundbutton"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/AcknowledgeLayout">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="Acknowledge"
+                android:id="@+id/Acknowledgebutton"
+                android:background="@drawable/roundbutton"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="193dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ThirdLayout">
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:text="Quick Report"
+            android:id="@+id/QuickReportbutton"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbutton"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+</LinearLayout>
