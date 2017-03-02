@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0f4c05"
+    tools:context=".MainActivity">
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--   tools:showIn="@layout/app_bar_main">-->
+
+    <!--This is a horizontal layout within the main screen vertical linear layout. -->
+    <!--It is used to hold the SOS button and report an incident button. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_frame">
+
+        <!--This is the linear layout to hold the Your Reports and Acknowledgement buttons -->
+
+        <!--This layout holds the Quick report button. -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="193dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/ThirdLayout">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:text="Quick Report"
+                android:id="@+id/QuickReportbutton"
+                android:layout_gravity="center"
+                android:background="@drawable/roundbutton"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/SecondLayout"
+            android:weightSum="1"
+            android:layout_weight="0.32"
+            android:layout_gravity="center">
+
+            <!--This linear layout holds the Your Reports button -->
+
+            <!--This linear layout holds the Acknowledgement button. -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/AcknowledgeLayout"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/YourReportsLayout">
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:text="Your Reports"
+                        android:id="@+id/YourReportsbutton"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:background="@drawable/roundbutton"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:id="@+id/FirstLayout"
+            android:weightSum="1"
+            android:layout_weight="0.64"
+            android:layout_gravity="center_horizontal|top">
+
+            <!--This linear layout holds the SOS button. -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/SOSLayout"
+                android:layout_weight="1.22">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="SOS"
+                    android:id="@+id/SOSbutton"
+                    android:background="@drawable/roundbutton"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+
+            <!--This Linear layout holds the Report an incident button -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ReportIncidentLayout">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="Report An Incidents"
+                    android:id="@+id/ReportIncidentbutton"
+                    android:background="@drawable/roundbutton"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

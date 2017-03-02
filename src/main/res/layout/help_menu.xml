@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is the linear layout for the HELP option in the navigation drawer.-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/HelpLay"
+    android:background="#0f4c05"
+    tools:context=".HelpMenu">
+    <!--This linear layout holds the text view for Label "HELP" and the content to be displayed. -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="114dp">
+
+        <!--This text view consists of the label HELP. -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="HELP"
+            android:id="@+id/AelpTextView"
+            android:gravity="center"
+            android:textColor="#ffe700"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="top|center" />
+    </LinearLayout>
+
+    <!--This linear layout consists of the content for help.-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <!--This text view contains the contents of help. -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1.SOS option is for adding the emergency contacts.                              2.Quick Report option is a one button press incident report system.                                 3.Acknowledge is for acknowledging someone&apos;s emergency message.                                               4.Report incidence is for reporting incident with images and video."
+            android:id="@+id/Description"
+            android:textColor="#ffe700"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+</LinearLayout>

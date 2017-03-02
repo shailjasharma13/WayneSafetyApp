@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is the XML file consisting of the ABOUT options in the navigation drawer.-->
+<!--Linear layout has been used to enter the option. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/AboutLay"
+    android:background="#0f4c05">
+
+    <!--This text view consists of the ABOUT option. -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ABOUT"
+        android:id="@+id/AboutTextView"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ffe700" />
+
+    <!--This is the text view for the description to be added to the about option. -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="With an increase in crime on campuses, there arises a need to keep taking new measures to ensure safety. This application is one such measure. It's features enable advanced methods of reporting crime and hence, reduce the time spent on investigation."
+        android:id="@+id/Description"
+        android:textColor="#ffe700"
+        android:textSize="20dp" />
+</LinearLayout>
